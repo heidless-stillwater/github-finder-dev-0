@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import User from './pages/User'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import NavBar from './components/layout/NavBar'
@@ -30,7 +31,7 @@ function App() {
                 }
               />
               <Route path='/about' element={<About />} />
-              {/* <Route path='/user/:login' element={<User />} /> */}
+              <Route path='/user/:login' element={<User />} />
               <Route path='/notfound' element={<NotFound />} />
               <Route path='*' element={<NotFound />} />
             </Routes>
